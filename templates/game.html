@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+<body>
+    <div class="container flex flex-col items-center justify-center h-screen text-2xl">
+        <p>
+            Computer : <span class="text-blue-600">{{computer}}</span>
+        </p>
+        <p>
+            player : <span class="text-blue-600">{{player}}</span>
+        </p>
+        <p>Result : <span class="text-blue-600"> {{result}}</span></p>
+
+    </div>
+</body>
+</html>
