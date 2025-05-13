@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+<body>
+   <h1 class="text-blue-600 flex justify-center items-center text-2xl font-bold mt-2">
+        My Favorite fruite 
+   </h1>
+   <form class="max-w-sm mx-auto " method="POST">
+        <div class="mb-5">
+            <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>
+            <input type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="mb-5">
+            <label for="fruite" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fruite</label>
+            <input type="text" id="base-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <label for="tast" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tast</label>
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>What is your Tast?</option>
+                <option value="US">Sour</option>
+                <option value="CA">Bitter</option>
+                <option value="FR">Sweet</option>
+            </select>
+        <label for="color" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-2">Color</label>
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>What is your color</option>
+                <option value="US">Green</option>
+                <option value="CA">Blue </option>
+                <option value="FR">Red</option>
+                <option value="FR">Pink</option>
+                <option value="FR">Black</option>
+            </select>
+        <div class="flex justify-center items-center mt-5">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Submit</button>
+        </div>
+        
+  </form>
+  
+</body>
+</html>
