@@ -1,0 +1,27 @@
+<!-- templates/layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}My App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dist/output.css') }}">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+
+  <nav class="bg-white shadow px-6 py-4 flex justify-between items-center">
+    <div class="text-xl font-bold text-blue-600">🍉 FruitApp</div>
+    <div class="flex gap-6">
+      <a href="{{ url_for('home') }}" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="{{ url_for('favorites') }}" class="text-gray-700 hover:text-blue-600">Favorites</a>
+      <a href="{{ url_for('about') }}" class="text-gray-700 hover:text-blue-600">About</a>
+    </div>
+  </nav>
+
+  <!-- ✅ Page Content -->
+  <main class="p-6">
+    {% block content %}{% endblock %}
+  </main>
+
+</body>
+</html>

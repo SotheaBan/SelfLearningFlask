@@ -1,19 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aboutpage</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
 </head>
 <body>
     {% extends "base.html" %}
     {% block title %}Home{% endblock %}
     {% block content %}
-    <div class="flex justify-center items-center mt-5 text-2xl font-bold">
-        <p> {{username}} Love {{fruit}}, it's {{color}} and {{taste}}</p>
-    </div>   
+    
+    <div class="flex justify-center items-center flex-col mt-5 text-2xl font-bold">
+        <h1 class="">
+            Hello there,my name Sothea 
+        </h1>
+        <p class="text-blue-600 "> 
+           I am a web developer at Morakot Technology.
+        </p>
+    </div>
+
     {% endblock %}
 </body>
 </html>
