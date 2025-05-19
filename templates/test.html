@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Day 1</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <h2>Welcome to jQuery</h2>
+    <h1 id="headerBtn">
+        hide
+    </h1>
+    <p>Click the button below:</p>
+        
+    <button id="myBtn">Click Me</button>
+    <p id="result"></p>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").hover(function () {
+                $("#result").text("Hello, World!");
+            });
+        });
+    </script>
+
+   
+
+</body>
+</html>
