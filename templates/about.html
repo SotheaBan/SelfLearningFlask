@@ -9,6 +9,7 @@
     <script type="text/javascript" 
          src="{{ url_for('static', filename='helloworld.js') }}">
     </script>
+    <script src="https://kit.fontawesome.com/15079d3149.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -16,17 +17,44 @@
     {% block title %}Home{% endblock %}
     {% block content %}
     
-    <div class="flex justify-center items-center flex-col mt-5 text-2xl font-bold">
-        <h1 class="">
-            Hello there,my name Sothea 
-        </h1>
-        <p class="text-blue-600 "> 
-           I am a web developer at Morakot Technology.
-        </p>
-    </div>
-    <button type="button" class="btn btn-primary mt-5" onclick="helloWorld()">
-        Hellow
-    </button>
+    <div class="container px-0">
+        <div class="row align-items-center">
+      
+          <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='images/fruite.png') }}" alt="Fruit Image" class="img-fluid mt-3" width="200">
+          </div>
+      
+          <div class="col-md-8">
+            <div class="row mb-3">
+              <div class="col-1 d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-house fa-lg"></i>
+              </div>
+              <div class="col">
+                <h5 class="mb-0">Sothea Ban</h5>
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <div class="col-1 d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-envelope fa-lg"></i>
+              </div>
+              <div class="col">
+                <h6 class="mb-0">bansothea.morakot@gmail.com</h6>
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-1 d-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-phone fa-lg"></i>
+              </div>
+              <div class="col">
+                <h6 class="mb-0">01919385</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
     {% endblock %}
 </body>
