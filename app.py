@@ -1,9 +1,13 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,jsonify
 
 app = Flask(__name__)
-from flask import Flask, render_template, request
 
-app = Flask(__name__)
+user_data = {
+    "Alice": {"fruit": "Apple", "taste": "Sweet", "color": "Green"},
+    "Bob": {"fruit": "Banana", "taste": "Bitter", "color": "Yellow"},
+    "Charlie": {"fruit": "Cherry", "taste": "Sour", "color": "Red"}
+}
+
 
 # Home Page
 @app.route("/")
@@ -21,6 +25,12 @@ def favorites():
         return render_template("resultSubmitionForm.html", username=name, fruit=fruit, color=color, taste=taste)
 
     return render_template("form.html")
+
+@app.route("/get_user_data", methods=["POST"])
+def get_user_data():
+    username = request.json.get("username")
+    data = user_data.get(username)
+    return jsonify(data if data else {})
 
 # (Optional) Result Page (if user visits directly)
 @app.route("/result")
