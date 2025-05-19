@@ -24,22 +24,27 @@
             <img src="{{ url_for('static', filename='images/fruite.png') }}" alt="Fruit Image" class="img-fluid mt-3" width="200">
           </div>
       
-          <div class="col-md-8">
-            <div class="row mb-3">
+          <div class="col-md-6">
+            <div class=" row mb-3">
               <div class="col-1 d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-house fa-lg"></i>
               </div>
               <div class="col">
-                <h5 class="mb-0">Sothea Ban</h5>
+                <h5 class="mb-0"> 
+                  {{username}}
+                </h5>
+        
+              </div>
+              <div class="col-auto">
+                <a href="/editabout" class="text-primary text-decoration-none">Edit</a>
               </div>
             </div>
-      
             <div class="row mb-3">
               <div class="col-1 d-flex align-items-center justify-content-center">
                 <i class="fa-solid fa-envelope fa-lg"></i>
               </div>
               <div class="col">
-                <h6 class="mb-0">bansothea.morakot@gmail.com</h6>
+                <h6 class="mb-0"> {{email}}</h6>
               </div>
             </div>
       
@@ -48,7 +53,7 @@
                 <i class="fa-solid fa-phone fa-lg"></i>
               </div>
               <div class="col">
-                <h6 class="mb-0">01919385</h6>
+                <h6 class="mb-0"> {{phone_number}}</h6>
               </div>
             </div>
           </div>

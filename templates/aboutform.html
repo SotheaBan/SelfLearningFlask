@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit aboutpage </title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block title %}Home{% endblock %}
+    {% block content %}
+        <div>
+            <form class="container mt-5" id="formfruite" method="POST" style="max-width: 400px;">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="fruit" class="form-label">email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="fruit" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter your Phone">
+                </div>
+
+                <div class="d-flex justify-content-center mt-4 position-relative">
+                    <button id="submitBtn" type="submit" class="btn btn-primary px-4">Submit</button>
+                </div>
+    
+            </form>
+        </div>
+    {% endblock %}
+</body>
+</html>
